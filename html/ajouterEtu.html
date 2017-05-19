@@ -77,7 +77,22 @@
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
         <h1>Ajouter un étudiant</h1>
-        <p>This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+       
+           <form class = "form-horizontal" action = "../traitement/ajouterEtu.php">
+               <p><label class = "control-label col-sm-2" for = "nom">Nom</label>
+                   <input type = "text" name = "nom"></p>
+               <p><label class = "control-label col-sm-2" for = "prenom">Prénom</label>
+               <input type = "text" name = "prenom"></p>
+               <p><label class = "control-label col-sm-2" for = "nEtu">Numéro d'étudiant</label>
+               <input type = "text" name = "nEtu"></p>
+               <p><label class = "control-label col-sm-2" for = "admission">Admission</label>
+                   <select name = "admission">
+                       <option>Tronc Commun</option>
+                       <option>Branche</option>
+                   </select>
+               <!--<p>à faire: après avoir clicker sur branche, il faut afficher un select filière</p>-->
+           </form>>
+       
         <p>
           <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
         </p>
