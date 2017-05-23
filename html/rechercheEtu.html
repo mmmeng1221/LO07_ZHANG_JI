@@ -45,13 +45,13 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">Project LO07</a>
+            <a class="navbar-brand" href="index.html">Home</a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Recherche</a></li>
-              <li><a href="#">Importer</a></li>
+              <li><a href="etudiant.html">Gestion des étudiants</a></li>
+              <li class = "active"><a href="#">Recherche</a></li>
+              <li><a href="#">Cursus</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                 <ul class="dropdown-menu">
@@ -76,11 +76,40 @@
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <h1>Navbar example</h1>
-        <p>This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-        <p>
-          <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
-        </p>
+        <h2>Recherche d'un étudiant</h2>
+        
+ <form>
+  <div class="form-group">
+    <label for="nom">Nom</label>
+    <input type="text" class="form-control" id="nom" placeholder="NOM">
+  </div>
+  <div class="form-group">
+    <label for="prenom">Prénom : </label>
+    <input type="text" class="form-control" id="prenom" placeholder="Prénom">
+  </div>
+
+  <div class="form-group">
+    <label for="nEtu">Numéro d'étudiant : </label>
+    <input type='text' class="form-control" id="nEtu" placeholder="N° Étudiant">
+  </div>
+  <fieldset class="form-group">
+    <legend>Admission : </legend>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="admission" id="tc" value="tc" checked>
+        Tronc Commun
+      </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="admission" id="br" value="br">
+        Branche
+      </label>
+    </div>
+  <button type="submit" class="btn btn-primary">Recherche</button>
+</form>
+             
+       
       </div>
 
     </div> <!-- /container -->
