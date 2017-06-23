@@ -13,7 +13,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="../include/css/bootstrap.min.css" rel="stylesheet">
-
+    <script src="../include/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
@@ -49,9 +49,10 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li><a href="cursus.html">Gestion des cursus</a></li>
+              <li><a href="cursus.html">All</a></li>
               <li class = "active"><a href="#">Recherche</a></li>
-              <li><a href="#">Import</a></li>
+              <li><a href="import_cursus">Import</a></li>
+              <li><a href="creer_cursus.html">Créer un nouveau cursus</a></li>
               
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -67,16 +68,17 @@
       
         <h2>Recherche d'un cursus</h2>
         
- <form action="#">
+ <form method="get" action="../php/rechercheCursus.php">
   <div class="form-group">
     <label for="nCursus">Numéro ID d'un cursus</label>
-    <input type="text" class="form-control" id="nCursus" placeholder="ID cursus">
+    <input type="text" class="form-control" name="nCursus" id="nCursus" placeholder="ID cursus">
   </div>
   <div class="form-group">
-    <label for="UE">UEs : </label>
-    <input type="text" class="form-control" id="ue" placeholder="Prénom">
-  </div>
-
+    <label for="ue">UEs : </label>
+    <input type="text" class="form-control" name="ue" id="nCursus" placeholder="Sigle d'une UE (Séparer des UEs par la virgule)"> 
+  </div> 
+     <input type="submit" class="btn btn-primary" value="Chercher" >
+     <input type="reset" class="btn btn-primary" value="Vider">
  </form>
              
     </div> <!-- /container -->
@@ -86,8 +88,8 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../include/js/vendor/jquery.min.js"><\/script>')</script>
+    
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>

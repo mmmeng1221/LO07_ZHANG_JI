@@ -3,12 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Applications/MAMP/htdocs/LO07/html/index.html</file>
-            <file>file:/Applications/MAMP/htdocs/LO07/html/rechercheEtu.html</file>
-            <file>file:/Applications/MAMP/htdocs/LO07/include/css/bootstrap-theme.min.css</file>
-            <file>file:/Applications/MAMP/htdocs/LO07/html/etudiant.html</file>
-            <file>file:/Applications/MAMP/htdocs/LO07/html/rechercheCursus.html</file>
-            <file>file:/Applications/MAMP/htdocs/LO07/html/cursus.html</file>
+            <file>file:/Applications/MAMP/htdocs/LO07_ZHANG_JI/sql/ue.sql</file>
+            <file>file:/Applications/MAMP/htdocs/LO07_ZHANG_JI/php/rechercheCursus.php</file>
+            <file>file:/Applications/MAMP/htdocs/LO07_ZHANG_JI/sql/cursus.sql</file>
+            <file>file:/Applications/MAMP/htdocs/LO07_ZHANG_JI/html/rechercheCursus.html</file>
+            <file>file:/Applications/MAMP/htdocs/LO07_ZHANG_JI/sql/cursus_insert.sql</file>
         </group>
     </open-files>
 </project-private>

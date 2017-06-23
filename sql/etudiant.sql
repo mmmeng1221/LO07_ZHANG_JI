@@ -23,29 +23,17 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Structure de la table `ue`
+-- Structure de la table `etudiant`
 --
 
-CREATE TABLE IF NOT EXISTS `ue` (
-  `sem_seq` varchar(10) NOT NULL,
-  `sem_label` varchar(10) NOT NULL,
-  `sigle` varchar(10) NOT NULL,
-  `cat` varchar(5) NOT NULL,
-  `affectation` varchar(10) NOT NULL,
-  `id` varchar(20) NOT NULL,
-  `utt` tinyint(1) NOT NULL,
-  PRIMARY KEY (`id`)
+CREATE TABLE IF NOT EXISTS `etudiant` (
+  `nEtu` int(5) NOT NULL,
+  `nom` varchar(20) NOT NULL,
+  `prenom` varchar(20) NOT NULL,
+  `admission` varchar(20) NOT NULL,
+  `filiere` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`nEtu`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Contraintes pour les tables exportées
---
-
---
--- Contraintes pour la table `ue`
---
-ALTER TABLE `ue`
-  ADD CONSTRAINT `fk_cursus` FOREIGN KEY (`id`) REFERENCES `cursus` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
