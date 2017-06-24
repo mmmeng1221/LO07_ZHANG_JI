@@ -27,6 +27,8 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `ue` (
+`idCursus` int(10) not null,
+`id` varchar(20) NOT NULL,
   `sem_seq` varchar(10) NOT NULL,
   `sem_label` varchar(10) NOT NULL,
   `sigle` varchar(10) NOT NULL,
@@ -36,9 +38,8 @@ CREATE TABLE IF NOT EXISTS `ue` (
 `profil` varchar(1),
  `credit` int(3),
 `resusltat` varchar(3),
-`id` varchar(20) NOT NULL,
-`idCursus` varchar(10) not null,
-  PRIMARY KEY (`id`)
+
+  PRIMARY KEY (`idCursus`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --

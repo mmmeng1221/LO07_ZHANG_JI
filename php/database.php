@@ -5,6 +5,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+$host = "localhost";
+$user = "root";
+$password = "root";
+$database = "projet";
 
 $serveur = 'localhost';
 $utilisateur = 'root';
@@ -12,7 +16,7 @@ $mot_de_passe = 'root';
 $bdd = 'projet';
 $link = mysqli_connect($serveur,$utilisateur,$mot_de_passe,$bdd);
 
-function input_csv($csv_file) {
+/*function input_csv($csv_file) {
     $result_arr = array ();
     $i = 0;
     while ($data_line = fgetcsv($csv_file, 10000)) {
@@ -29,3 +33,4 @@ function input_csv($csv_file) {
     }
     return $result_arr;
 }
+*/
