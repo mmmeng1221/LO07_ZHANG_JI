@@ -8,7 +8,7 @@
 
 $serveur = 'localhost';
 $utilisateur = 'root';
-$mot_de_passe = 'YES';
+$mot_de_passe = 'root';
 $bdd = 'projet';
 $link = mysqli_connect($serveur,$utilisateur,$mot_de_passe,$bdd);
 

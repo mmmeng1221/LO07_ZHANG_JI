@@ -1,7 +1,7 @@
 <?php
-include_once('database.php');
-$action=$_GET['action'];
-if ($_FILES["file"]["error"] > 0)
+
+/*
+if ($_FILES["file"]["error"])
   {
   echo "Error: " . $_FILES["file"]["error"] . "<br />";
   }
@@ -11,7 +11,13 @@ else
   echo "Type: " . $_FILES["file"]["type"] . "<br />";
   echo "Size: " . ($_FILES["file"]["size"] / 1024) . " Kb<br />";
   echo "Stored in: " . $_FILES["file"]["tmp_name"];
-  }
+  }*/
+include_once('database.php');
+$filename = $_FILES['file']['tmp_name'];
+input_csv($filename);
+if( empty ($filename)){
+    echo "false";
+}
 if (file_exists("../csv/" . $_FILES["file"]["name"]))
 {
       echo $_FILES["file"]["name"] . " already exists. ";
@@ -23,7 +29,7 @@ if (file_exists("../csv/" . $_FILES["file"]["name"]))
  echo "Stored in: " . "../csv/" . $_FILES["file"]["name"];}
 
 
-$filename = $_FILES['file']['tmp_name'];
+
  $handle = fopen($filename, 'r'); 
 $etudiant =fgets($handle);
 $array_etudiant = explode(";;;;;;;;",$etudiant);
