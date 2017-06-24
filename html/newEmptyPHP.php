@@ -1,3 +1,11 @@
+<?php
+
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -60,9 +68,10 @@
       </nav>
 
       <!-- Main component for a primary marketing message or call to action -->
-      <div>
-         <h1><?php phpinfo();
-             ?> </h1>
+      <div class="jumbotron">
+             <?php 
+         echo "hello world";
+             ?> 
       
       </div>
     </div> <!-- /container -->
@@ -78,3 +87,4 @@
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
+
