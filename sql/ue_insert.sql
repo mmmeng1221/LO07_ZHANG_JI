@@ -9,13 +9,13 @@
  */
 
 insert into ue
-values(1,'ISI1','NF16','CS','TCBR','Y','Y',6,'A',1,1);
+values(1,1,'ISI1','NF16','CS','TCBR','Y','Y',6,'A');
 
 insert into ue
-values(1,'ISI1','NF20','CS','TCBR','Y','Y',6,'A',2,1);
+values(2,1,'ISI1','NF20','CS','TCBR','Y','Y',6,'A');
 
 insert into ue
-values(1,'ISI1','SY02','CS','TCBR','Y','Y',6,'A',3,1);
+values(3,1,'ISI1','SY02','CS','TCBR','Y','Y',6,'A');
 
 insert into ue
-values(1,'ISI1','IF14','TM','TCBR','Y','Y',6,'A',4,1);
+values(4,1,'ISI1','IF14','TM','TCBR','Y','Y',6,'A');

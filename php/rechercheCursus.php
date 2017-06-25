@@ -23,10 +23,13 @@ print_r($numero);
             }
         }
        $resultat->closeCursor();
-       
    }    
    }  
  catch (PDOException $e){
      die("Erreur!".$e->getMessage());
- }
+ } 
+ 
+ 
+ ?>
     
+

@@ -1,0 +1,387 @@
+/**********************************************************/
+/* Feuille de style commune des applications web Cocktail */
+/**********************************************************/
+/*
+Cette feuille de style surcharge les couleurs de la feuille de style
+par defaut. A charger apres uttCommon.css.
+
+Elle impose des couleurs style UP.
+
+*/
+
+
+/* --------------------------------------------------------------------------- */
+/*Elements html de base*/
+
+input, select, textarea {
+  border-color:rgb(204, 204, 204);
+  background-color:#FEFEFE;
+  font-weight:normal;
+}
+input[type="submit"]:hover {
+  background-color:#F1F1F1;
+  color:#000000;
+  cursor:default;
+}
+input[type="button"]:hover {
+  background-color:#F1F1F1;
+  color:#000000;
+  cursor:default;
+}
+/*table th {
+  background-color:#D7E8FF;
+  font-weight:bold;
+  text-align:center;
+}*/
+fieldset {
+  background-color:#F2F4F7;
+  border-color:#9EADC4;
+}
+fieldset legend {
+  background:#E2E2E2;
+  border-color:#9EADC4;
+}
+.cadre {
+  border:1px solid #8793A5 ;
+}
+.box {
+  border:1px solid #E2E2E2 ;
+}
+.boxTitre {
+  background-color:#E2E2E2;
+}
+.subBox {
+  background-color:#FFFFFF;
+  border:1px solid #F2F4F7;
+}
+.subBoxTitre {
+  background-color:#F2F4F7;
+}
+.blocInfo {  
+  padding : 10px 15px 10px 40px;	
+  background-repeat : no-repeat;
+  -moz-border-radius : 20px;
+  background-color : #DDE9FB !important;
+  background-image : url(images/info.gif);
+  background-position : 6px 6px;
+  border : 1px solid #345EE4 !important;
+}
+.blocWarning {
+  background-color:#EBE18D;
+}
+.blocInstruction {
+  background-color:#FFD7BF;
+}
+.uttAjaxToolbar {
+  background-color:#E2E2E2 ;
+  border:1px solid #8793A5 ;
+}
+.auto_complete ul li.selected {
+  background-color:#E2E2E2 ;
+  color:#FF0000;
+}
+
+.bdColor {
+   background-color:#F2F4F7;
+}
+
+.cartouche {
+	background-color:#8793A5;
+}
+
+/* --------------------------------- TBV ------------------------------------*/
+.uttajaxtableview {
+  border-color:#E2E2E2;
+}
+.uttajaxtableview table {
+  width:100%;
+}
+.uttajaxtableview>div#CktlAjaxTableView_DivBarreDeNavigation {
+  border-color: #9EADC4;
+  background-color: #F2F4F7;
+}
+.uttajaxtableview>div.uttAjaxTableView_DivHeaderAndBody {
+  border-color: #A3A3A3;
+}
+.uttajaxtableview>div.uttAjaxTableView_DivHeaderAndBody table thead tr th {
+  background-color:#D7E8FF;  
+  color: #333;
+  border-style:solid;
+  border-bottom-color: #A3A3A3;
+  border-left-color: #DBDBDB;
+  border-right-color: #A3A3A3;  
+  border-top:medium none; 
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.95);
+}
+
+.uttajaxtableview>div.uttAjaxTableView_DivHeaderAndBody table thead tr th a {
+	color: #333;
+	text-shadow: 1px 1px rgba(255, 255, 255, 0.95);
+}
+
+.uttajaxtableview>div.uttAjaxTableView_DivHeaderAndBody table tbody tr.odd {
+  background-color:#FFFFFF;
+}
+.uttajaxtableview>div.uttAjaxTableView_DivHeaderAndBody table tbody tr.even {
+  background-color:#F3F8F8;
+}
+.uttajaxtableview>div.uttAjaxTableView_DivHeaderAndBody table tbody tr:hover {
+  background-color:#E2E2E2 ;
+  color:black;
+  text-shadow:0 0 0 #CBD44B;
+}
+.uttajaxtableview>div.uttAjaxTableView_DivHeaderAndBody table tbody tr.selected {
+  background-color:#F2F4F7;
+  color:#218CA5 !important;
+}
+.uttajaxtableview>div.uttAjaxTableView_DivHeaderAndBody table.selectionMultiple tbody tr.selected {		
+  background-color: #DFDCD8;
+  color: #FFFFFF;
+}
+.uttajaxtableview>div.uttAjaxTableView_DivHeaderAndBody table tbody tr.editable {
+  background-color:#F2F4F7;
+}
+.uttajaxtableview>div.uttAjaxTableView_DivHeaderAndBody table tbody tr td {
+  border-left-color:#DBDBDB;
+  border-right-color:#A3A3A3;
+}
+.uttajaxtableview>div.uttAjaxTableView_DivHeaderAndBody table tfoot tr th {
+  background-color:#F2F4F7;
+  border-left-color:#DBDBDB;
+  border-right-color:#A3A3A3;
+  border-top-color:#E2E2E2 ;
+}
+
+.uttajaxtableview .triable {
+	color: #5F556E;
+	/*#218CA5;*/
+}
+
+.uttajaxtableview .valid {
+	background-color: #d0eba5;
+}
+
+.uttajaxtableview>div#CktlAjaxTableView_DivBarreDeStatut {
+  border-color: #A3A3A3;
+  background-color: #F1F1F1;
+}
+
+.tree {
+  background-color:#FFFFFF !important;
+  border-color:#8793A5 !important;
+  white-space: nowrap;
+}
+ul.tree li a {
+  color:#218CA5;
+  font-weight:bold;
+}
+
+.dialog_content {
+	color:black !important;
+}
+
+/* --------------------------------------------------------------------------- */
+	/* Wrapper horizontal gris */
+.utt_container_principal {
+	border: 1px solid #9EADC4;
+	color: black;
+	background-color: #EFF3FF;
+	/*border: 1px solid #999999;*/
+	-moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.utt_entete_wrapper_horizontal {
+	/*color: #FFFFFF;*/
+	/*background-color: #E9EAEC;*/
+	/* firefox; multiple color stops */
+	background-image:-moz-linear-gradient(#9EADC4,#F2F4F7);
+	/* chrome 10+, safari 5.1+ */
+  	background-image: -webkit-linear-gradient(#9EADC4,#F2F4F7);
+  	/* ie10 */
+  	background-image: -ms-linear-gradient(#9EADC4,#F2F4F7);
+  	/* opera 11.1 */
+  	background-image: -o-linear-gradient(#9EADC4,#F2F4F7);
+  	/* The "standard" */
+  	background-image: linear-gradient(#9EADC4,#F2F4F7);
+}
+
+.utt_copyright_wrapper_horizontal {
+	/*color: #FFFFFF;*/
+	/*background-color: #E9EAEC;*/
+	/* firefox; multiple color stops */
+	background-image:-moz-linear-gradient(#9EADC4,#F2F4F7);
+	/* chrome 10+, safari 5.1+ */
+  	background-image: -webkit-linear-gradient(#9EADC4,#F2F4F7);
+  	/* ie10 */
+  	background-image: -ms-linear-gradient(#9EADC4,#F2F4F7);
+  	/* opera 11.1 */
+  	background-image: -o-linear-gradient(#9EADC4,#F2F4F7);
+  	/* The "standard" */
+  	background-image: linear-gradient(#9EADC4,#F2F4F7);
+    font-size: 10px;
+}
+
+/* --------------------------------------------------------------------------- */
+/* Simple Menu */
+
+.utt_simplemenu .menuitem a:hover {
+    background-color: #E2E2E2;
+}
+
+/* -----------------------------------ModuleAssistance-------------------------------------- */
+.assistantEtapes,.containerSchemaCompetence {
+	background-color: #F3F5FA;
+}
+
+#ContainerContactAvenant, #ContainerGestionPartenaire, #ContainerGestionContact {
+    background-color: #F3F5FA;	
+}
+
+.assistantEtapes .etape {
+    border-bottom: 1px solid #D1CAD2;
+    /*#ccc;*/
+}
+
+#ContainerAssistantEtapes.assistantEtapes  div.etape a {
+	color:black;
+}
+
+.assistantEtapes .selected {
+	color: white;
+    background-color: #9EADC4;
+	text-shadow: 1px 1px rgba(20, 20, 20, 0.95);
+    /*#E9EAEC;*/
+}
+
+#ContainerAssistantEtapes.assistantEtapes  div.etape.selected a {
+	color:white;
+}
+
+.assistantEtapes .passed {
+    color: #848f9e;
+	text-shadow: 1px 1px rgba(255, 255, 255, 0.95);
+    /*#B3BBC8;*/
+}
+
+#ContainerAssistantEtapes.assistantEtapes  div.etape.passed a {
+	color: #848f9e;
+}
+
+
+.assistantContent,.competenceDetail {
+	background-color: #EBEBEB;
+	/*EBEBEB*/
+}
+
+.assistantAlerte {
+	background-color: #EBEBEB;
+	color: #FF0000;
+}
+
+.assitantModuleContainer h4, .assistantModule h4, .assistantEtapes h4, .schemaCompetence h4, .utt_accueil_wrapper_horizontal h4, .boxTitre, .assistantAdministrateurContainer h4 {
+	color: #848F9E;
+	border-bottom: 1px solid #6C6C6C;
+	text-shadow: 1px 1px rgba(255, 255, 255, 0.95);
+	/*9EADC4;*/
+}
+
+.assistantAdministrateurContainer h2, .assitantModuleContainer h2  {
+	color: #5f556e;
+	/*border-bottom: 1px solid #6C6C6C;*/
+	text-shadow: 1px 1px rgba(255, 255, 255, 0.95);
+	/*9EADC4;*/
+}
+
+.assistantMenu {
+	border-top: 1px solid #E9EAEC;
+}
+
+.uttAjaxToolbar {
+	border: 1px solid #9EADC4;
+}
+
+.box {
+    background-color: #EBEBEB;
+}
+/* --------------------------------- Tabs ------------------------------------*/
+.ajaxTabbedPanelTab-selected {
+	background: #E2E2E2;
+	border: 1px solid #9B9B9B;/*006699*/
+	border-bottom: 1px solid #E2E2E2;
+}
+
+.ajaxTabbedPanelTab-unselected {
+	background: #ffffff;
+	border: 1px solid #9B9B9B;
+	color: #c0c0c0;
+}
+
+.ajaxTabbedPanelTab-selected a {
+	/*text-shadow: 1px 1px rgba(255, 255, 255, 0.95);*/
+}
+
+.ajaxTabbedPanelTab-unselected a {
+	color: #7174FD;
+	/*E5EDFA;*/
+	text-shadow: 1px 1px rgba(255, 255, 255, 0.95);
+}
+
+.ajaxTabbedPanelPanes {
+	border-top: 1px solid #9B9B9B;
+	background-color: #E2E2E2;
+}
+
+/* --------------------------------- Tabs non ajax ------------------------------------*/
+.Tab {
+	background: #ffffff;
+	border: 1px solid #9B9B9B;
+	color: #F0F0F0;
+	/*#c0c0c0;*/
+}
+
+.TPTab_Selected {
+	background: #F0F0F0;
+	/*#E2E2E2;*/
+	border: 1px solid #9B9B9B;
+	border-bottom: 1px solid #F0F0F0;
+	/*#E2E2E2;*/
+}
+
+.TPTab_Selected span {
+	color: #848f9e;
+	text-shadow: 1px 1px rgba(255, 255, 255, 0.95);
+}
+
+.Tab a {
+	color: #848f9e;
+	/*E5EDFA;*/
+	text-shadow: 1px 1px rgba(255, 255, 255, 0.95);
+}
+
+.TabPanelContent {
+	border-top: 1px solid #9B9B9B;
+	border-left: 1px solid #9B9B9B;
+	background-color: #F0F0F0;
+	/*E2E2E2;*/
+}
+
+/* --------------------------------- ? ------------------------------------*/
+#SchemaCompetence dt {
+	color: #9EADC4;
+}
+
+#SchemaCompetence dd {
+	color: #9EADC4;
+}
+
+table.progressBarContainer td {
+	color: rgb(100, 100, 100);
+}
+
+#RfcctContainerRecherche {
+	border-right: 2px solid #9EADC4;
+}
+
+#RfcctContainerRechercheMenu {
+	border-top: 2px solid #9EADC4;
+}

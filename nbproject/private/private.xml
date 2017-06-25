@@ -3,17 +3,32 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Applications/MAMP/htdocs/LO07_ZHANG_JI/sql/ue.sql</file>
-            <file>file:/Applications/MAMP/htdocs/LO07_ZHANG_JI/php/rechercheCursus.php</file>
-            <file>file:/Applications/MAMP/htdocs/LO07_ZHANG_JI/html/ajouterCursus.html</file>
-            <file>file:/Applications/MAMP/htdocs/LO07_ZHANG_JI/sql/cursus.sql</file>
-            <file>file:/Applications/MAMP/htdocs/LO07_ZHANG_JI/php/database.php</file>
-            <file>file:/Applications/MAMP/htdocs/LO07_ZHANG_JI/php/form.php</file>
-            <file>file:/Applications/MAMP/htdocs/LO07_ZHANG_JI/html/newEmptyPHP.php</file>
-            <file>file:/Applications/MAMP/htdocs/LO07_ZHANG_JI/html/rechercheCursus.html</file>
-            <file>file:/Applications/MAMP/htdocs/LO07_ZHANG_JI/php/cursus.php</file>
-            <file>file:/Applications/MAMP/htdocs/LO07_ZHANG_JI/html/cursus.html</file>
-            <file>file:/Applications/MAMP/htdocs/LO07_ZHANG_JI/sql/cursus_insert.sql</file>
+            <file>file:/G:/UTT/ISI2/demo/LO07_ZHANG_JI/html/importerCursus.html</file>
+            <file>file:/G:/UTT/ISI2/demo/LO07_ZHANG_JI/sql/etudiant_delete.sql</file>
+            <file>file:/G:/UTT/ISI2/demo/LO07_ZHANG_JI/php/database.php</file>
+            <file>file:/G:/UTT/ISI2/demo/LO07_ZHANG_JI/sql/ue_delete.sql</file>
+            <file>file:/G:/UTT/ISI2/demo/LO07_ZHANG_JI/html/rechercheEtu.html</file>
+            <file>file:/G:/UTT/ISI2/demo/LO07_ZHANG_JI/html/newEmptyPHP.php</file>
+            <file>file:/G:/UTT/ISI2/demo/LO07_ZHANG_JI/php/rechercheCursus.php</file>
+            <file>file:/G:/UTT/ISI2/demo/LO07_ZHANG_JI/html/index.html</file>
+            <file>file:/G:/UTT/ISI2/demo/LO07_ZHANG_JI/include/css/bootstrap-theme.css</file>
+            <file>file:/G:/UTT/ISI2/demo/LO07_ZHANG_JI/sql/etudiant_insert.sql</file>
+            <file>file:/G:/UTT/ISI2/demo/LO07_ZHANG_JI/sql/ue.sql</file>
+            <file>file:/G:/UTT/ISI2/demo/LO07_ZHANG_JI/include/js/bootstrap.min.js</file>
+            <file>file:/G:/UTT/ISI2/demo/LO07_ZHANG_JI/html/rechercheCursus.html</file>
+            <file>file:/G:/UTT/ISI2/demo/LO07_ZHANG_JI/sql/ue_insert.sql</file>
+            <file>file:/G:/UTT/ISI2/demo/LO07_ZHANG_JI/php/etudiant.php</file>
+            <file>file:/G:/UTT/ISI2/demo/LO07_ZHANG_JI/include/js/bootstrap.js</file>
+            <file>file:/G:/UTT/ISI2/demo/LO07_ZHANG_JI/sql/cursus.sql</file>
+            <file>file:/G:/UTT/ISI2/demo/LO07_ZHANG_JI/sql/cursus_delete.sql</file>
+            <file>file:/G:/UTT/ISI2/demo/LO07_ZHANG_JI/include/js/npm.js</file>
+            <file>file:/G:/UTT/ISI2/demo/LO07_ZHANG_JI/traitement/importCursus.php</file>
+            <file>file:/G:/UTT/ISI2/demo/LO07_ZHANG_JI/html/cursus.html</file>
+            <file>file:/G:/UTT/ISI2/demo/LO07_ZHANG_JI/php/importCursus.php</file>
+            <file>file:/G:/UTT/ISI2/demo/LO07_ZHANG_JI/sql/cursus_insert.sql</file>
+            <file>file:/G:/UTT/ISI2/demo/LO07_ZHANG_JI/html/etudiant.html</file>
+            <file>file:/G:/UTT/ISI2/demo/LO07_ZHANG_JI/php/cursus.php</file>
+            <file>file:/G:/UTT/ISI2/demo/LO07_ZHANG_JI/sql/etudiant.sql</file>
         </group>
     </open-files>
 </project-private>

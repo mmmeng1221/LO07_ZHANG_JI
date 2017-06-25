@@ -1,0 +1,9 @@
+ID;201402;;;;;;;;NO;ZHANG;;;;;;;;PR;Zhaozhe;;;;;;;;AD;BR;;;;;;;;FI;?;;;;;;;;
+==;s_seq;s_label;sigle;categorie;affectation;utt;profil;credit;resultat
+EL;1;ISI3;NF16;CS;TCBR;Y;Y;6;B
+EL;2;ISI2;GE34;ME;TCBR;Y;Y;4;B
+EL;2;ISI2;LO12;CS;TCBR;Y;Y;6;B
+EL;2;ISI2;NF19;TM;TCBR;Y;Y;6;C
+EL;3;ISI3;GL02;CS;TCBR;Y;Y;6;A
+EL;3;ISI3;IF26;TM;FCBR;Y;Y;6;A
+EL;3;ISI3;NF20;CS;TCBR;Y;Y;6;A

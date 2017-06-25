@@ -1,0 +1,11 @@
+.formAligner label {
+	display:inline-block;
+	font-weight: bold;
+	text-align: right;
+	margin-left: 5px;
+}
+
+.formCentrer {
+	text-align: left;
+    margin: 0 auto;
+}

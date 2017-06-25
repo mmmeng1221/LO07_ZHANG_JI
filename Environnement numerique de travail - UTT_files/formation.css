@@ -1,0 +1,416 @@
+.up #portalPageHeader {height : 85px!important; background:transparent url(/ResourceServingWebapp/rs/utt/menu/banniere_large_blue.png) top left no-repeat;}
+
+/* Bienvenue */
+.up #portalWelcome {
+  background-color:white;
+border : none;
+padding: 0; position: absolute; left: 200px; top: 15px;
+background: transparent;
+}
+.up #portalWelcomeInner p {
+float: right; margin-right: 5px; padding: .5em;
+padding-left : 35px;
+font-size : 11px;
+font-weight : bold;
+color : #404040;
+}
+
+.up #portalWelcome .logout-label { display: none; }
+
+/* Logo */
+.up .focused #portalLogo,.up #portalLogo { padding: 0; display : none;} /* blocage de l'affichage du logo */
+.up .focused #portalPageHeaderInner,.up #portalPageHeaderInner {height: 85px!important; }
+
+/* Boutons de la barre d'outils en haut a droite */
+.up #portalPageBarHome,
+.up #portalPageBarHelp,
+.up #portalPageBarAdmin,
+.up #portalPageBarSitemap,
+.up #portalPageBarLogout,
+.up #portalPageBarLogin,
+.up #portalPageBar #portalPageBarCustom { display: inline-block; height: 34px; width: 34px; }
+
+.up #portalPageBarHome { background: transparent url(/ResourceServingWebapp/rs/utt/32x32/actions/go-homeb.png) top left no-repeat; }
+.up #portalPageBarLogout { background: transparent url(/ResourceServingWebapp/rs/utt/32x32/actions/system-log-outb.png) top left no-repeat; }
+.up #portalPageBarHelp { background: transparent url(/ResourceServingWebapp/rs/utt/32x32/actions/system-searchb.png) top left no-repeat; }
+.up #portalPageBarAdmin { background: transparent url(/ResourceServingWebapp/rs/utt/32x32/emblems/emblem-systemb.png) top left no-repeat; }
+.up #portalPageBarSitemap { background: transparent url(/ResourceServingWebapp/rs/utt/32x32/apps/internet-web-browserb.png) top left no-repeat; }
+.up #portalPageBarLogin { background: transparent url(/ResourceServingWebapp/rs/utt/32x32/actions/system-log-inb.png) top left no-repeat; }
+.up #portalPageBar #portalPageBarCustom { background: transparent url(/ResourceServingWebapp/rs/utt/32x32/categories/preferences-systemb.png) top left no-repeat; }
+
+
+.up #portalPageBar #portalPageBarCustom a,
+.up #portalPageBarHome a,
+.up #portalPageBarHelp a,
+.up #portalPageBarAdmin a,
+.up #portalPageBarSitemap a,
+.up #portalPageBarLogout a,
+.up #portalPageBarLogin a { display: block; height: 34px; width: 34px; }
+
+.up #portalPageBar #portalPageBarCustom span,
+.up #portalPageBarHome span,
+.up #portalPageBarHelp span,
+.up #portalPageBarAdmin span,
+.up #portalPageBarSitemap span,
+.up #portalPageBarLogout span,
+.up #portalPageBarLogin span  { display: none; }
+
+.up #portalPageBar #portalPageBarCustom  { display: none; }
+
+/* Onglets */
+.up #portalNavigationInner { background: #f5f7f9; border: none; white-space:nowrap;}
+.up #portalNavigation .fl-tabs {
+  text-align: left;
+  white-space:nowrap;
+  font-family: "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+  font-size:11px;
+  font-weight:normal;
+  list-style:none;
+  margin : 0px;
+  padding : 5px 0 5px 0;
+  border:none;
+  border-top: thin solid #4e91ba;
+  border-bottom: thin solid #4e91ba;
+}
+
+.up #portalNavigation { background: none; border: none; white-space:nowrap; }
+.up #portalNavigation .fl-tabs li.portal-navigation a {  color: #4e91ba !important;  text-shadow: none;  font-weight: normal;
+ margin:0px;
+ padding-left : 20px;
+ text-decoration: none;
+ border : none;
+ }
+
+.up #portalNavigation .fl-tabs li.portal-navigation:hover,
+.up #portalNavigation .fl-tabs li {
+background:#f5f7f9 url(/ResourceServingWebapp/rs/utt/menu/seperator.gif) bottom right repeat-y ;
+border:none;
+margin: 0;
+padding-bottom: 8px; /*pour d�coler le calque de sous menu */
+}
+
+.up #portalNavigation .fl-tabs li.portal-navigation:hover a,
+.up #portalNavigation .fl-tabs li.portal-navigation a:hover,
+.up #portalNavigation .fl-tabs li.portal-navigation.fl-tabs-active a.portal-navigation-link:hover{
+  background: #4e91ba url(/ResourceServingWebapp/rs/utt/menu/hoverbv.gif) left center no-repeat;
+  color: #ffffff !important;
+  padding-left : 20px;
+  border:none;
+  border-bottom: thin solid #4e91ba;
+
+}
+
+.up #portalNavigation .fl-tabs li.portal-navigation.empty-tab.noaddchild-tab {
+    display: none;
+}
+
+
+.up #portalNavigation .fl-tabs li.portal-navigation.fl-tabs-active a.portal-navigation-link {
+  background: #2e3641 url(/ResourceServingWebapp/rs/utt/menu/hoverbo.gif) left center no-repeat;
+  color: #ffffff !important;
+  padding-left : 20px;
+  border:none;
+}
+
+.up #portalNavigation .fl-tabs li.portal-navigation {
+  padding: 0;
+  margin : 0px;
+  border:none;
+  position: relative; }
+
+
+
+/* Lignes de sous naviagtion (portlet de l'onglet actif) */
+.up #portalNavigationSubrow.fl-tab-content {
+  background: none;
+border-top: thin solid #4e91ba;
+border-bottom: thin dotted #4e91ba;
+background-color : white;
+text-align: left;
+}
+.up #portalNavigationSubrow a {
+  background:transparent;
+  color: #b3c7c6 !important;
+  font-weight:bold!important;
+  padding: 0 10px 0 10px;
+  text-decoration: none;
+  text-shadow: none;}
+.up #portalNavigationSubrow a:hover {
+  background: white url(/ResourceServingWebapp/rs/utt/menu/fleche2b.png) left center no-repeat;
+  padding: 0 10px 0 10px;
+  color: #4e91ba!important;
+  font-weight:bold!important;
+  text-decoration:underline;
+  }
+
+.up #portalNavigationSubrow{white-space:normal;line-height:1em; }
+.up #portalNavigationSubrow .portal-subnav{ padding-left:0.6em; }
+.up #portalNavigationSubrow .portal-subnav.first { padding-left:1em; }
+
+.up #portalNavigationSubrow {display : none;} /*ne plus afficher la barre de sous menu*/
+
+/* Calque qui s'affiche au survole d'un onglet, contient les sous canaux ou des options sur l'onglet */
+.up #portalNavigation .portal-flyout-container {
+  padding: 0; z-index: 50; white-space:normal;
+  margin-left: 0px;
+  margin-top: -3px;
+  border:none;
+}
+.up #portalNavigation .portal-flyout-container-inner {
+  background-color: #4e91ba;
+  border: none;
+  margin: 0; padding: 0;
+}
+.up #portalNavigation .portal-flyout-container .portal-subnav-list .portal-subnav {
+  border: none;
+  margin: 0; padding: 0;
+}
+.up #portalNavigation .portal-flyout-container .portal-subnav-list li.first {border:none;}
+.up #portalNavigation .fl-tabs li.portal-navigation a {
+  font-family: "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+  font-size:120%!important;
+}
+
+.up #portalNavigation .portal-flyout-container .portal-subnav-list .portal-subnav a.portal-subnav-link:hover {
+  background:#3e5a79 url(/ResourceServingWebapp/rs/utt/menu/hoverbb.gif) center left no-repeat;
+  /*si on veut la petite fleche en d�but de ligne !  */
+  background-color:#3e5a79!important;
+  text-shadow: none;
+  color: white!important;
+  border:none;
+}
+.up #portalNavigation .portal-flyout-container .portal-subnav-list .portal-subnav a.portal-subnav-link {
+  background:#3e5a79 url(/ResourceServingWebapp/rs/utt/menu/hoverbv.gif) center left no-repeat;
+  background-color: #4e91ba!important;
+  color: white!important;
+  font-weight: normal;
+  padding: 5px 5px 5px 20px;
+  text-decoration: none;
+  text-shadow: none;
+  border: none;
+}
+
+/* sidebar */
+.up #portalSidebar {background: #FFF;}
+#portalPageBodyTitleRow { background: transparent!important;}
+.up #portalSidebar .fl-widget-content, .up #portalSidebar .fl-widget .fl-listmenu {background-color: white;}
+/*.up #portalSidebar .fl-widget {background-color: #FFF; border:thin solid #4e91ba;}*/
+.up #portalSidebar .fl-widget-titlebar h2{color: black !important;}
+.up #portalSidebar .fl-widget .fl-listmenu li, .up #portalSidebar .fl-widget .fl-listmenu li a {
+  color: black !important; background-color: #FFF !important;}
+.up #portalSidebar .fl-widget .fl-listmenu li:hover, .up #portalSidebar .fl-widget .fl-listmenu li a:hover {
+  color: white !important; background-color: #3e5a79 !important;}
+
+.up #portalSidebar .fl-listmenu {border:none;}
+.up #portalSidebar .fl-listmenu li {border:none;border-top:1px solid #f5f7f9;}
+.up #portalSidebar {margin-top:0em!important;}
+.up #portalSidebar #portalCASLogin p {display: none;}
+.up #portalSidebar #portalCASLogin {background-color: #FFF; border:none}
+
+.up #portalSidebar .fl-widget-titlebar h2 {
+  background-color : #4e91ba;
+  margin : 0.5em 0 0 0;
+  padding : 0.2em 0.5em;
+  color:white!important;
+}
+
+.up #portalSidebar h3 {
+  background-color : #2e3641;
+  margin : 0.5em 0 0 0;
+  padding : 0.2em 0.5em;
+  color:white;
+}
+
+#portalPageBody.fl-container-flex {
+  margin-top : 0px!important;
+  padding-top : 0px!important;
+}
+
+.up #portalSidebarInner {
+  padding-top : 0px!important ;
+  margin-top : 5px!important;
+  background-color : #f5f7f9;
+  border : thin solid #4e91ba;
+}
+
+.up #portalSidebar .fl-widget
+{
+  padding : 0px!important;
+  margin-bottom: 10px;
+  border : none!important;
+}
+
+/* bouton de recherche dans la banniere */
+/* masquer car recherche google ! */
+.up #webSearchContainer {display : none;}
+
+
+/* pied de page */
+.up #portalPageFooter {
+  display : none; /* le pied de page ne doit pas etre affich� pour maximiser l'espace */
+border-top: thin dotted #4e91ba;
+}
+
+.up #portalPageFooter a {
+  color: #b3c7c6 !important;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+.up #portalPageFooter a:hover,
+.up #portalPageFooter #portalProductAndVersion a:hover,
+.up #portalPageFooter #portalCopyright a:hover,
+.up #portalPageFooter #silkIconsAttribution a:hover {
+  color: #4e91ba!important;
+  text-decoration:underline;
+}
+
+/* bouton return */
+.up .focused .up-portlet-controls .up-portlet-control{text-decoration : none!important;}
+
+.up .up-portlet-controls .edit {background-repeat: no-repeat;}
+.up .up-portlet-controls .edit span {
+  color: #b3c7c6 !important;
+  text-decoration: none;
+  text-shadow: none;
+  padding-left : 70px;
+}
+.up .up-portlet-controls .edit:hover span {
+  color: #4e91ba!important;
+  text-decoration:underline;
+  padding-left : 70px;
+}
+
+.up .focused .up-portlet-controls .return:hover span,
+.up .focused .up-portlet-controls .plein_ecran:hover span {
+  color: #4e91ba!important;
+  text-decoration:underline;
+}
+
+.up .up-portlet-controls .plein_ecran {background-position:-96px 0;}
+.up .up-portlet-controls .plein_ecran:hover {background-position:-96px -16px;}
+
+.up .up-portlet-controls .return {display : none;}
+
+/* barre de titre */
+#portalPageBodyTitleRow h1 {
+  /*
+  margin : 15px 0;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 12px!important;
+  color: #ffffff!important;
+  letter-spacing: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color : #4e91ba;
+  padding : 0.2em 10em;
+  */
+  display : none; /*20/9/12*/
+}
+.up .focused .up-portlet-titlebar h2 {
+  margin : 1em 0 0 0;
+  font-size: 12px!important;
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.up .focused .up-portlet-titlebar h2 a {
+  /*
+  background-color : #2e3641;
+  padding : 0.2em 10em;
+  color:white!important;
+  */
+  font-family: Arial,Helvetica,sans-serif;
+  color: #3e5a79!important;
+}
+
+
+.up #portalPageBodyBreadcrumb a {
+  color: #2e3641 !important;
+  text-decoration: none!important;
+  text-shadow: none;
+}
+.up #portalPageBodyBreadcrumb a:hover {
+  color: #3e5a79!important;
+  text-decoration:underline;
+}
+
+
+/* fenetre d'application */
+.fl-widget
+{
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin-top : 5px;
+  padding : 0px;
+}
+
+.fl-theme-mist .fl-widget
+{
+  /*
+  background :#E0DAE8 url(/ResourceServingWebapp/rs/utt/widget/widget-bg.png) top left repeat-x;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: auto auto;
+  border : 1px solid #cccccc;
+  */
+
+  border : thin solid #f5f7f9;
+  background : none;
+  background-color : #f5f7f9;
+
+}
+
+.up .dashboard .up-portlet-titlebar h2 a
+{
+  font-family: "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+  font-weight: bold!important;
+  font-size: 12px!important;
+  color: #4e91ba!important;
+}
+
+.up .dashboard .up-portlet-content-wrapper
+{
+  border : none;
+}
+
+/* cadre menu droite */
+.fl-widget-titlebar, .fl-widget-content, .fl-listmenu
+{
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+/*fils du menu */
+#portalPageBodyTitleRow {display : none;}
+
+/* affichage appli gauche */
+.up-portlet-content-wrapper {
+  padding : 0;
+  padding-top : 15px;
+}
+
+/*css � appliquer aux pop-up*/
+.portlet-form-button, .up button, .up .button, .up input[type="submit"], .up input[type="button"]
+{
+  background-color: #2e3641!important;
+  color : white!important;
+  }
+.portlet-form-button:hover, .up .button:hover, .up .button:focus, .up a.button:hover, .up a.button:focus, .up input[type="submit"]:hover, .up input[type="submit"]:focus, .up input[type="button"]:hover, .up input[type="button"]:focus
+{
+  background-color: #4e91ba!important;
+  color : white!important;
+  }
+
+.fl-theme-mist a {
+  color: #4e91ba!important;
+  font-weight: normal!important;
+  }
+.fl-theme-mist a:hover, .fl-theme-mist a:focus {
+  color: #ffffff!important;
+  font-weight: normal!important;
+  }

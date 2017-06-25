@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `cursus` (
-  `id` varchar(10) NOT NULL,
+  `id` int(10) NOT NULL,
   `label` text ,
   `nEtu` int(10),
   PRIMARY KEY (`id`),

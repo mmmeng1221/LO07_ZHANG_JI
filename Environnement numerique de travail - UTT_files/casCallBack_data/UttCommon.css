@@ -1,0 +1,1180 @@
+/**********************************************************/
+/* Feuille de style commune des applications web Cocktail */
+/**********************************************************/
+
+/** 
+* A charger en premier dans le header des pages de votre application 
+* Si vous souhaitez changer le look des composants, créez une feuille 
+* de style pour votre application dans laquelle vous redéfinissez 
+*  tout ou partie des classes css ci-dessous.
+* Les couleurs sont volontairement laissees en niveaux de gris.
+* Chargez en plus UttCommonVert.css, UttCommonBleu.css etc. pour passer en couleur.
+
+*/
+
+/* --------------------------------------------------------------------------- */
+/*Elements html de base*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+input, select, textarea {
+ font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+ font-weight: normal;
+ border: 1px solid;
+ border-color: black;
+  margin: 2px;
+}
+
+
+input[type=button], input[type=submit]  {
+  cursor: default;
+ /* background-color: #FFFFFF;*/
+ background: #DDDDDD url(images/utt_button_background_20.png) repeat-x scroll 0;
+ height: 23px; 
+ vertical-align: middle;
+ border-color: lightgray;
+}
+
+input[type=radio], input[type=checkbox] {
+	border-style: none;
+}
+
+
+input:hover[type=button],input:hover[type=submit]  {
+  cursor: default;
+  color : black;
+  border-color : black; 
+}
+
+input[disabled=true] {
+  cursor: default;
+  background-color: lightgray;
+}
+input[disabled] {
+  cursor: default;
+  background-color: lightgray;
+}
+select[disabled] {
+  cursor: default;
+  background-color: lightgray;
+}
+
+td {
+}
+
+th {
+	 font-weight: bold;
+	 text-align: left;
+}	
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+legend {
+	font-weight: bold;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+fieldset {
+    padding : 1em;
+    border : 1px solid;    
+    margin : 1em 1em 2em 1em;
+}
+
+fieldset legend {
+    padding : 0px 2em 0px 2em;
+    font-weight : bold;  
+    text-align: center;
+    border : 1px solid;
+}
+
+
+
+
+/* --------------------------------------------------------------------------- */
+/* Classes pour la mise en page globale  */
+.alignToCenter {
+	text-align: center;		
+}
+.alignToLeft {
+	text-align: left;		
+}
+.alignToRight {
+	text-align: right;		
+}
+.imgAlignToTextBottom {
+  vertical-align: text-bottom;
+}
+
+.useMaxWidth {
+	width: 100%;		
+}
+.useHalfWidth {
+	width: 50%;		
+}
+.useMinWidth {
+	width: 1%;		
+}
+.nowrap {
+	white-space:nowrap;	
+}
+.wrap {
+	width: 1%;	
+}
+.autoscroll {
+	overflow: auto;	
+}
+
+
+
+/*A appliquer au div contenant le label et la value (dans une presentation label : valeur) */
+.utt_labelvalue {
+
+}
+/*A appliquer au span contenant le label (dans une presentation label : valeur) */
+.utt_labelvalue_label {
+	font-weight: bold;
+	text-align: left;
+	margin: 4px;
+}
+
+/*A appliquer au span contenant la valeur (dans une presentation label : valeur) */
+.utt_labelvalue_value {
+	text-align: left;
+	margin: 4px;
+}
+
+.utt_labelvalue_required {
+	color: red;
+}
+
+
+
+
+/* --------------------------------------------------------------------------- */
+/** Classes pour definir des zones de l'ecran */
+
+.cadre {
+	border: 1px #9c9c9c solid;
+}
+
+.box {
+	background-color: #FFFFFF;
+	border: 1px #9c9c9c solid;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.boxTitre {
+	background-color: #9c9c9c;
+	text-align: left;	
+	font-weight: bold;	
+	padding: 1px;
+	padding-left: 4px;
+}
+
+.subBox {
+	background-color: #FFFFFF;
+	border: 1px #c0c0c0 solid;
+}
+
+.subBoxTitre {
+	background-color: #c0c0c0;
+	text-align: left;	
+	font-weight: bold;	
+	padding: 1px;
+	padding-left: 4px;
+}
+
+/* --------------------------------------------------------------------------- */
+/** Classes pour definir des types de message */
+
+.blocInfo {
+	background-color: #fbffc0;
+	height: auto;
+	width: auto;
+	margin: 5px 5px 5px 5px;
+	position: relative;
+	text-align: center;		
+}
+
+.blocWarning {
+	background-color: #ebe18d;
+	height: auto;
+	width: auto;
+	margin: 5px 5px 5px 5px;
+	position: relative;
+	text-align: center;		
+}
+
+.blocInstruction {
+	background-color: #ffd7bf;
+	height: auto;
+	width: auto;
+	margin: 5px 5px 5px 5px;
+	position: relative;
+	text-align: center;		
+}
+
+.blocErreur {
+	background-color: #FF0000;
+	color: white;
+	height: auto;
+	width: auto;
+	margin: 5px 5px 5px 5px;
+	position: relative;
+	text-align: center;		
+}
+
+
+.blocCentre {
+	height: auto;
+	width: auto;
+	margin: 5px 5px 5px 5px;
+	position: relative;
+	text-align: center;		
+	padding: 2px;
+}
+
+.cartouche {
+	-moz-border-radius : 20px;
+	padding: 2px 30px 2px 10px;	
+	margin-right: -20px;
+}
+
+
+/* --------------------------------------------------------------------------- */
+/* Barre d'outils */
+.uttAjaxToolbar {
+  background: #c0c0c0; 
+  vertical-align: middle;
+  text-align: left;
+  border-size: 0px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.uttAjaxToolbar img {
+  vertical-align: middle;
+}
+/* --------------------------------------------------------------------------- */
+/* Composant autocomplete */
+
+.autocompletecontainer {
+	position: relative;
+}
+
+.autocompletefield {
+  background: #FFFFFF url(images/find.png) no-repeat scroll left top;
+  padding-left: 20px;
+  text-align: left;
+  width: -moz-available;
+}
+.autocompletefield .disabled {
+  background: #FFFFCC url(images/find.png) no-repeat scroll left top;
+}
+.autocompletefield_busy {
+  background:#FFFFFF url(images/indicator_arrows.gif) no-repeat scroll left top;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.auto_complete {
+  background-color: transparent;
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+ font-size: 11px;
+ font-weight: bold;
+}
+.auto_complete ul {
+    border:1px solid #888;
+    background-color: #fff;
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    height: 150px;
+    overflow: hidden;
+    overflow-y: auto;
+    display: block;
+}
+.auto_complete ul li {
+    margin:0;
+    padding:3px;
+    display: block;
+    text-align: left;
+}
+.auto_complete ul li.selected {
+    background-color: #c0c0c0;
+    color: #FF0000;
+}
+.auto_complete ul li.nullSelection {
+    background-color: #FFFFFF;
+    color: #FF0000;
+    text-decoration: blink;
+}
+.auto_complete ul strong.highlight {
+    color: #800;
+    margin:0;
+    padding:0;
+}
+/* --------------------------------------------------------------------------- */
+/* Tableviews */
+.uttajaxtableview {
+	overflow: hidden;
+	overflow-x: hidden;
+	padding: 5px;
+	width: auto;
+	border: 1px solid;
+}
+
+.uttajaxtableview>div#UttAjaxTableView_DivBarreDeNavigation {
+  border: 1px solid ;
+}
+.uttajaxtableview>div#UttAjaxTableView_DivBarreDeNavigation table  {
+  border: none;
+  font-size: 8pt;
+  width:100%;
+}
+.uttajaxtableview>div#UttAjaxTableView_DivBarreDeNavigation table tbody {
+}
+.uttajaxtableview>div#UttAjaxTableView_DivBarreDeNavigation table tbody tr td {
+  border-left-width: 0;
+  border-right-width: 0;
+}
+.uttajaxtableview>div#UttAjaxTableView_DivBarreDeNavigation table tr {
+}
+.uttajaxtableview>div#UttAjaxTableView_DivBarreDeNavigation table td {
+  font-size: 8pt;
+}
+
+.uttajaxtableview>div.uttAjaxTableView_DivHeaderAndBody {
+  border: 1px solid;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+.uttajaxtableview>div.uttAjaxTableView_DivHeaderAndBody table {
+	width: 100%;
+}
+
+.uttajaxtableview>div.uttAjaxTableView_DivHeaderAndBody table tbody {
+	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: hidden;	
+}
+.uttajaxtableview>div.uttAjaxTableView_DivHeaderAndBody table tbody tr.odd {
+  background-color: #FFFFFF;
+}
+.uttajaxtableview>div.uttAjaxTableView_DivHeaderAndBody table tbody tr.even {
+  background-color: #E0E0E0;
+}
+
+.uttajaxtableview>div.uttAjaxTableView_DivHeaderAndBody table tbody tr:hover {
+	color: #FFFFFF;	
+	background-color: #c0c0c0;
+	cursor: default;
+}
+
+.uttajaxtableview>div.uttAjaxTableView_DivHeaderAndBody table tbody tr.selected {		
+  background-color: #c0c0c0;
+}
+.uttajaxtableview>div.uttAjaxTableView_DivHeaderAndBody table.selectionMultiple tbody tr.selected {		
+  background-color: #a0a0a0;
+  color: #FFFFFF;
+}
+
+.uttajaxtableview>div.uttAjaxTableView_DivHeaderAndBody table thead tr th {
+  border-top: 0px solid #555555;
+  border-bottom: 1px solid #555555;
+  border-left: 1px solid #DBDBDB;
+  border-right:1px solid #A3A3A3;
+  background-color: #EFEFEF;
+  padding-left: 3px;
+  padding-right: 3px;
+  cursor: default;
+}
+.uttajaxtableview>div.uttAjaxTableView_DivHeaderAndBody table tbody tr td {
+  border-left: 1px solid #FFFFFF;
+  border-right: 1px solid #D9D9D9;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.uttajaxtableview>div.uttAjaxTableView_DivHeaderAndBody table tfoot tr th {
+  border-top: 1px solid #555555;
+  border-left: 1px solid #DBDBDB;
+  border-right:1px solid #A3A3A3;
+  background-color: #EFEFEF;
+}
+
+.uttajaxtableview>div#UttAjaxTableView_DivBarreDeStatut {
+  border: 1px solid;
+}
+.uttajaxtableview>div#UttAjaxTableView_DivBarreDeStatut table  {
+  border: none;
+  font-size: 8pt;
+  width:100%;
+}
+.uttajaxtableview>div#UttAjaxTableView_DivBarreDeStatut table tbody {
+}
+.uttajaxtableview>div#UttAjaxTableView_DivBarreDeStatut table tbody tr td {
+  border-left-width: 0;
+  border-right-width: 0;
+}
+.uttajaxtableview>div#UttAjaxTableView_DivBarreDeStatut table tr {
+}
+.uttajaxtableview>div#UttAjaxTableView_DivBarreDeStatut table td {
+  font-size: 8pt;
+}
+
+.uttajaxtableview .updated {
+	text-shadow: rgb(203, 212, 75) 0em 0em 0.3em;
+	color: rgb(188, 37, 45);
+}
+
+.uttajaxtableview .triable {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.uttajaxtableview .triAscending {
+  background: transparent url(images/Sort_Up_H.png) no-repeat scroll right center;
+  padding: 0 7px 0 0;
+	cursor: pointer;
+}
+.uttajaxtableview .triDescending {
+  background: transparent url(images/Sort_Down_H.png) no-repeat scroll right center;
+  padding: 0 7px 0 0;
+	cursor: pointer;
+}
+.uttajaxtableview .premierePage {
+  background: transparent url(images/BeginningPressed.png) no-repeat scroll center center;
+  border: none;
+  width: 20px;
+  height: 19px;
+}
+.uttajaxtableview .pagePrecedente {
+  background: transparent url(images/BackwardPressed.png) no-repeat scroll center center;
+  border: none;
+  width: 20px;
+  height: 19px;
+}
+.uttajaxtableview .pageSuivante {
+  background: transparent url(images/ForwardPressed.png) no-repeat scroll center center;
+  border: none;
+  width: 20px;
+  height: 19px;
+}
+.uttajaxtableview .dernierePage {
+  background: transparent url(images/EndPressed.png) no-repeat scroll center center;
+  border: none;
+  width: 20px;
+  height: 19px;
+}
+
+
+/* --------------------------------------------------------------------------- */
+/* Rajouts pour la UttAjaxSimpleTableView */
+
+.uttajaxsimpletableview>div.uttAjaxTableView_DivHeaderAndBody {
+  overflow-y: inherit;
+  overflow-x: inherit;
+}
+
+.uttajaxsimpletableviewnofixedheader>div.uttAjaxTableView_DivHeaderAndBody {
+  overflow-y: auto;
+  overflow-x: inherit;
+}
+
+
+/* --------------------------------------------------------------------------- */
+/* Simple Menu */
+.utt_simplemenu {
+	background-color:#FFFFFF;
+	border-color:#CCCCCC #999999 #999999 #CCCCCC;
+	border-style:solid;
+	border-width:1px;
+	outline:medium none;
+	overflow-y:auto;
+	position:absolute;
+	z-index:1100;
+}
+
+.utt_simplemenu .menuitem {
+    padding: 1px;
+    background-color: none;
+    font-size: smaller;
+}
+
+.utt_simplemenu .menuitem a {
+    text-decoration: none;
+    display: block;	
+    padding: 5px 20px 5px 6px;
+    background-color: none;
+}
+
+.utt_simplemenu .menuitem a:hover {
+	background-color:#CCCCCC;
+}
+
+
+/* --------------------------------------------------------------------------- */
+/* Arbres */
+ul.tree {
+	margin: 0px;
+	padding: 0px;
+}
+ul.tree ul {
+	margin: 0px;
+	padding: 0px 0px 0px 19px;
+}
+ul.tree li {
+	list-style: none;
+}
+ul.tree li a {
+	text-decoration: none;
+	 font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+ul.tree img.nodeControl {
+	border: none;
+	vertical-align: middle;
+}
+
+.tree {
+	background-color: #FFFFFF;
+	border: 1px;
+	border-style: solid;
+	border-color: #c0c0c0; 
+	overflow: hidden;
+	overflow-y: auto;
+	text-align: left;
+	color: #868686;
+}
+
+.tree .selected {
+    font-weight: bold;  
+}
+
+.uttajaxtree_collapsed {
+	background: url(../images/ico_node_collapsed_gris_16.png) 0 0;
+}
+.uttajaxtree_expanded {
+	background: url(../images/ico_node_expanded_gris_16.png) 0 0;
+}
+.uttajaxtree_leaf {
+	background: url(../images/ico_node_leaf_gris_16.png) 0 0;
+}
+
+ul.tree li.even {
+   background-color: #FFFFFF;
+}
+
+ul.tree li.odd {
+   background-color: #EEEEEE;
+}
+
+/* --------------------------------------------------------------------------- */
+/* Boutons */
+
+.utt_inline_block {
+	position: relative;
+	display: inline-block;
+}
+
+a.utt_button div:hover, a.utt_button:hover {
+	border-color: #666666;
+	color: #000000;
+	text-decoration: none;
+}
+.utt_button {
+	margin: 0px 2px;
+	color: #000000;
+	cursor: pointer;
+	outline-style: none;
+}
+.utt_button_disabled {
+	cursor: default;
+}
+
+.utt_button_base {
+	-x-system-font: none;
+    font-family: Arial,sans-serif;
+	letter-spacing: normal;
+	line-height: 1;
+	margin: 0 1px;
+	outline-color: -moz-use-text-color;
+	outline-style: none;
+	outline-width: medium;
+	text-align: center;
+	text-indent: 0px;
+	text-transform: none;
+	vertical-align: baseline;
+	white-space: nowrap;
+	word-spacing: normal;
+}
+
+.utt_button_base_outer_box {
+	border-bottom:1px solid #AAAAAA;
+	border-top:1px solid #BBBBBB;
+}
+.utt_button_base_inner_box {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	background:#E3E3E3 none repeat scroll 0 0;
+	border-left:1px solid #BBBBBB;
+	border-right:1px solid #AAAAAA;
+	margin:0 -1px;
+}
+.utt_button_base_pos {
+	position:relative;
+}
+
+.utt_button_base_top_shadow {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	background:#F9F9F9 none repeat scroll 0 0;
+	border-bottom: #EEEEEE 0.23em solid;
+	height:0.692em;
+	left:0;
+	overflow:hidden;
+	position:absolute;
+	right:0;
+	top:0;
+}
+.utt_button_base_content {
+	color:#333333;
+	line-height:0.95em;
+	padding:0.141em 0.461em;
+	position:relative;
+	text-align:center;
+	font-weight: bold;
+}
+
+.utt_button_icon {
+	background-repeat:no-repeat;
+	height:16px;
+	margin:0 1px 0 0;
+	vertical-align: text-bottom;
+}
+
+/* --------------------------------------------------------------------------- */
+/* Boutons d'actions */
+
+.utt_action_button {
+	font-weight: bold;
+	width: 16px;
+}
+
+/* --------------------------------------------------------------------------- */
+/* Actions */
+
+.utt_action_new {
+	background: transparent url(../images/16x16/001_01_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_add {
+	background: transparent url(../images/16x16/001_01_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_new_document {
+	background: transparent url(../images/16x16/001_03_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_delete {
+	background: transparent url(../images/16x16/001_02_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_delete_document {
+	background: transparent url(../images/16x16/001_04_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_view_document {
+	background: transparent url(../images/16x16/001_07_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_update {
+	background: transparent url(../images/16x16/001_39_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_find {
+	background: transparent url(../images/16x16/001_38_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_print {
+	background: transparent url(../images/16x16/printer_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_print2 {
+	background: transparent url(../images/16x16/printer2_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_edit {
+	background: transparent url(../images/16x16/001_45_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_previous {
+	background: transparent url(../images/16x16/001_23_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_next {
+	background: transparent url(../images/16x16/001_21_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_cancel {
+	background: transparent url(../images/16x16/001_05_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_etoile {
+	background: transparent url(../images/16x16/001_15_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_etoileGrise {
+	background: transparent url(../images/16x16/001_17_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_validate {
+	background: transparent url(../images/16x16/001_06_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_ok {
+	background: transparent url(../images/16x16/001_06_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_accueil {
+	background: transparent url(../images/16x16/001_20_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_busy {
+	background: transparent url(../images/16x16/busy_16x16.gif) no-repeat scroll 0px 0px;
+}
+.utt_action_sendMail {
+	background: transparent url(../images/16x16/sendmail_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_reset {
+	background: transparent url(../images/16x16/001_39_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_process {
+	background: transparent url(../images/16x16/process_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_warning {
+	background: transparent url(../images/16x16/001_30_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_process {
+	background: transparent url(../images/16x16/process_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_down {
+    background: transparent url(../images/ico_node_expanded_gris_16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_dossier {
+    background: transparent url(../images/16x16/001_43_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_history {
+    background: transparent url(../images/16x16/history_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_schedule {
+    background: transparent url(../images/16x16/001_44_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_lock {
+    background: transparent url(../images/16x16/001_42_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_right_arrow {
+    background: transparent url(../images/16x16/001_21_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_down_arrow {
+    background: transparent url(../images/16x16/001_22_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_left_arrow {
+    background: transparent url(../images/16x16/001_23_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_up_Arrow {
+    background: transparent url(../images/16x16/001_24_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_info {
+    background: transparent url(../images/16x16/info_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_upload_file {
+	background: transparent url(../images/16x16/upload_file_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_download_file {
+	background: transparent url(../images/16x16/001_52_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_save_file {
+	background: transparent url(../images/16x16/save_file_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_first {
+	background: transparent url(../images/16x16/button_black_first_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_last {
+	background: transparent url(../images/16x16/button_black_last_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_forward {
+	background: transparent url(../images/16x16/button_black_ffw_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_rewind {
+	background: transparent url(../images/16x16/button_black_rew_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_infojaune {
+    background: transparent url(../images/16x16/bt_info_jaune_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_plus {
+    background: transparent url(../images/16x16/bt_plus_16x16.png) no-repeat scroll 0px 0px;
+}
+
+.utt_action_up_triangle {
+    background: transparent url(../images/16x16/001_28_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_right_triangle {
+    background: transparent url(../images/16x16/001_25_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_down_triangle {
+    background: transparent url(../images/16x16/001_26_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_left_triangle {
+    background: transparent url(../images/16x16/001_27_16x16.png) no-repeat scroll 0px 0px;
+}
+
+.utt_action_ok {
+    background: transparent url(../images/16x16/001_18_16x16.png) no-repeat scroll 0px 0px;
+}
+
+.utt_action_ko {
+    background: transparent url(../images/16x16/001_19_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_partial {
+    background: transparent url(../images/16x16/001_09_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_full {
+    background: transparent url(../images/16x16/001_10_16x16.png) no-repeat scroll 0px 0px;
+}
+.utt_action_login {
+    background: transparent url(../images/16x16/001_57_16x16.png) no-repeat scroll 0px 0px;
+}
+/* --------------------------------------------------------------------------- */
+/* Login */
+.login {
+  background-color: #FFFFFF;
+  position: absolute;
+  width: 400px;
+  height: 170px;
+  left: 50%;
+  margin-left: -200px;
+  top: 50%;
+  margin-top: -85px;
+  text-align: center;
+  border: 2px solid #999999;
+  font-size: 11px;
+}
+.login_label, .login_input, .login_error  {
+  padding:10px;
+  text-align:left;
+  float:left; 
+  width:150px;
+  font-size:14px;
+}
+
+.login_input {
+  width:200px;
+}
+
+.login_error {
+  width:auto;
+  color:#F00;
+  text-decoration: blink;
+  float: none;
+}
+
+.login_input input {
+  width:auto;
+}
+
+
+/* --------------------------------------------------------------------------- */
+/* Composants */
+.uttComponentContainer {
+
+}
+
+.uttComponentContent {
+	overflow: auto;
+}
+
+/* --------------------------------------------------------------------------- */
+/* Listes de selection */
+.uttAjaxSelectionList {
+	overflow: scroll; 
+	border: 1px solid;
+}
+
+.uttAjaxSelectionList a:hover {
+	text-decoration: none;
+}
+
+.uttAjaxSelectionList ul{
+	width: 100%;
+}
+
+.uttAjaxSelectionList ul  li {
+	font-size: 12px;
+}
+
+.uttAjaxSelectionList ul  li.odd {
+	background-color: #EEEEEE;
+}
+
+.uttAjaxSelectionList ul  li.even {
+	
+}
+
+
+
+a.uttAjaxSelectionList ul li.selected {
+	background-color: #CCCCCC;
+}
+
+a.uttAjaxSelectionList ul.focused li.selected {
+	background-color: #CCCCCC;
+}
+
+/* Classes du wrapper d'une application */
+.utt_container_principal {
+	width: 98%;
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+	background-color: #FFFFFF;
+	text-align: center;
+	border: 1px solid #999999;
+	font-size: 12px;
+	float: inherit;
+}
+
+.utt_entete_wrapper_horizontal { 
+	height: 30px;
+	background-color: #DEDEDE;
+	position: relative;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	text-align: left;
+	font-size: 2em;
+	display: block;
+	color: #000000;
+	font-weight: bold;
+	padding: 4px;
+}
+.utt_entete_wrapper_horizontal { 
+	height: 30px;
+	background-color: #DEDEDE;
+	position: relative;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	text-align: left;
+	font-size: 2em;
+	display: block;
+	color: #000000;
+	font-weight: bold;
+	padding: 4px;
+}
+
+.utt_copyright_wrapper_horizontal {
+	height: 15px;
+	background-color: #DEDEDE;
+	position: relative;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	display: block;
+	color: #000000;
+	font-weight: bold;
+}
+
+.utt_copyright_wrapper_horizontal a {
+	text-decoration: none;
+}
+
+.utt_accueil_wrapper_horizontal { 
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	text-align: center;
+	margin: 0;
+	font-size: 12px;
+}
+
+/* --------------------------------- Tabs ------------------------------------*/
+.ajaxTabbedPanel {
+	width: auto;
+	padding: 10px 0 0 20px;
+	margin: 0;
+}
+
+.ajaxTabbedPanelTab-selected {
+	display: inline;
+	padding: 3px 7px 1px 7px;
+	background: #ffffff;
+	border: 1px solid #c0c0c0;
+	border-bottom: 1px solid white;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-topleft: 5px;
+}
+
+.ajaxTabbedPanelTab-unselected {
+	display: inline;
+	padding: 2px 7px 0 7px;
+	background: #f0f0f0;
+	/*background: #ffffff;*/
+	border: 1px solid #c0c0c0;
+	border-bottom: 0;
+	color: #c0c0c0;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-topleft: 5px;
+}
+
+.ajaxTabbedPanelTab-disabled {
+	display: inline;
+	padding: 2px 7px 0 7px;
+	background: #f0f0f0;
+	border: 1px solid #c0c0c0;
+	border-bottom: 0;
+	color: #c0c0c0;
+	margin-right:-4px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-topleft: 5px;
+}
+
+.ajaxTabbedPanelTab-selected a {
+	font-weight: bold;
+	font-size: 12px;
+	padding: 6px;
+}
+
+.ajaxTabbedPanelTab-unselected a {
+	padding: 6px;
+	font-size: 12px;
+	/*color: #a0a0a0;*/
+}
+
+.ajaxTabbedPanelTab-disabled span{
+	padding: 6px;
+	font-size: 12px;
+}
+
+.ajaxTabbedPanelPanes {
+	padding-left: 0px;
+	margin: 0;
+	min-height: 400px;
+	overflow: auto;
+	border: 1px solid #c0c0c0;
+	background-color: white;
+}
+
+.ajaxTabbedPanelPane-selected {
+	list-style-type: none;
+	display: block;
+	padding: 10px;
+}
+
+.ajaxTabbedPanelPane-unselected {
+	list-style-type: none;
+	display: none;
+}
+
+/* --------------------------------------------------------------------------- */
+/* Surcharge des classes JQUERY-UI.  */
+/* TODO Rod : s'inspirer des thèmes de jquery-ui pour faire évoluer le look & feel des applis cocktail ? */
+.ui-state-default {
+	color : #A0A0A0;
+	background: #F2F2F2;
+}
+.ui-state-hover {
+	color : #606060;
+	background: #F6F6F6;
+}
+.ui-state-active {
+	color : #505050;
+	background: #FFFFFF;
+}
+
+.ui-accordion-header {
+	text-align: left;
+	padding-left: 25px;
+}
+
+
+/* --------------------------------------------------------------------------- */
+/* UttAjaxTooltip */
+.UttAjaxTooltip_window {
+	position: absolute;
+	/*top: 0;*/
+	border: 0 solid;
+	text-align: left;
+	z-index: 10001;
+}
+
+
+.UttAjaxTooltip_frame {
+	position: relative;
+	background-color: #EFEFEF;
+	height: 100%;
+	border : 1px solid;
+	border-color : #000000;
+}
+
+.UttAjaxTooltip_header {
+	margin: 0;
+	padding: 4px;
+	background-color: #CCCCCC;
+}
+
+.UttAjaxTooltip_content {
+	position: relative;
+	padding: 6px;
+	overflow: auto;
+}
+/* --------------------------------------------------------------------------- */
+/* IndividuICalUI */
+.deleted {
+    background : #FBFBF9 url(images/barre.gif) repeat-x 50% !important;    
+    font-style : italic;
+    color : #6C6C53;
+}
+
+.utt_action_undo {
+   background: transparent url(../images/undo.png) no-repeat scroll 0px 0px;
+   height: 16px;
+   width: 16px;
+}
+.utt_action_suppression {
+   background: transparent url(../images/delete.png) no-repeat scroll 0px 0px;
+   height: 16px;
+   width: 16px;
+}
+
+.utt_action_edition {
+   background: transparent url(../images/edit.png) no-repeat scroll 0px 0px;
+   height: 16px;
+   width: 16px;
+}
+
+/* --------------------------------------------------------------------------- */
+/* CompteUI */
+.ValiditeFondBlanc {
+	
+	background : #FBFBF9 url(images/16x16/001_36_16x16.png) no-repeat scroll left top;
+	color : #000000;
+}
+
+
+.InvaliditeFondGris {
+	background: #CCCCCC url(images/16x16/001_34_16x16.png) no-repeat scroll left top;
+	font-style : italic;
+	color : #000000;
+}
+
+/* --------------------------------------------------------------------------- */
+/* GroupeTreeView */
+.overflow-auto {
+	overflow: auto;
+}
+
+.whitespace-nowrap { white-space: nowrap; }
+
+/* Champ de recherche avec un icone loupe */
+.utt_srchField {
+	background: transparent url(images/find.png) no-repeat scroll 1px 1px;
+	padding-left : 18px;	
+}
+
